@@ -1,29 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Hello World Extension",
+    "name": "Talk to my hand",
     "version": "1.0",
-    "description": "A simple Chrome extension.",
+    "description": "A Chrome extension to convert sign language to english.",
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.socket.io/4.0.0/socket.io.min.js 'unsafe-inline'; object-src 'self'",
+    
     "options_page": "options.html",
     "action": {
       "default_popup": "index.html",
       "default_icon": "icon.png"
     },
     "permissions": []
+    
   }
-  
-
-
-  // {
-  //   "manifest_version": 3,
-  //   "name": "Hello World Extension",
-  //   "version": "1.0",
-  //   "description": "A simple Chrome extension.",
-  //   
-  //   "action": {
-  //     "default_popup": "index.html",
-  //     "default_icon": "icon.png"
-  //   },
-  //   "permissions": ["camera"],
-  //   "host_permissions": ["<all_urls>"]
-  // }
   

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Talk to my hand</title>
     <link rel="stylesheet" href="css/popup.css" />
   </head>
   <body>
-    <img src="icon.png" alt="Logo" />
+    <img id="logo" src="icon.png" alt="Logo" />
     <h2>Sign Language Translator</h2>
-    <video id="video" autoplay playsinline width="230" style="display:none;"></video>
-    
     <form id="startForm">
       <button type="submit">Start Camera</button>
     </form>
-
-    <!-- ✅ Move this below everything else -->
+    <video id="video" autoplay playsinline style="display: none;"></video>
+    <div id="translationBoard" style="display: none;">
+      <textarea id="translatedText" placeholder="Your translated text will appear here..."></textarea>
+      <button id="copyButton">Copy to Clipboard</button>
+      <button id="speakButton">Speak Text</button>
+    </div>
+    <script src="js/socket.io.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/textboard.js"></script>
+
   </body>
 </html>
