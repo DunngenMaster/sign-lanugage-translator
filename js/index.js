@@ -8,7 +8,6 @@ document.getElementById("startForm").addEventListener("submit", async (e) => {
     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
     video.srcObject = stream;
     video.style.display = "block";
-
     document.getElementById("logo").style.display = "none";
     document.getElementById("startForm").style.display = "none";
     document.getElementById("translationBoard").style.display = "block";
